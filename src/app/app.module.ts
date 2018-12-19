@@ -24,6 +24,7 @@ import { CommentComponent } from './comment/comment.component';
 import {CommentService} from './shared/comment.service';
 import {HttpClientModule} from '@angular/common/http';
 import {PostService} from './shared/post.service';
+import { NewestPostPipe } from './newest-post.pipe';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {PostService} from './shared/post.service';
     NewsFeedComponent,
     NewsFeedFormComponent,
     NewsFeedItemsGridComponent,
-    CommentComponent
+    CommentComponent,
+    NewestPostPipe
   ],
   imports: [
     BrowserModule,

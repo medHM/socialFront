@@ -16,6 +16,7 @@ export class NewsFeedFormComponent implements OnInit {
               public  router:Router) { }
 
   ngOnInit() {
+    this.loadPosts();
   }
 
   resetForm(form : NgForm) {
@@ -44,6 +45,7 @@ export class NewsFeedFormComponent implements OnInit {
     (resp =>{
       this.resetForm(c);
       this.loadPosts();
+
     })
   }
 }
